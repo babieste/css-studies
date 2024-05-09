@@ -9,350 +9,349 @@
   <body>
     <h1>CSS Studies</h1>
     <hr />
-    <details>
-      <summary>Margin studies</summary>
+    <h2>Margin studies</h2>
+    <div>
       <div>
+        <h3>Physical directions</h3>
         <div>
-          <h3>Physical directions</h3>
-          <div>
-            <h4>
-              <code>writing-mode: horizontal-tb; direction: ltr;</code>
-            </h4>
-            <p>
-              <code>
-                margin-top: 2rem; margin-right: 4rem; margin-bottom: 2rem;
+          <h4>
+            <code>writing-mode: horizontal-tb; direction: ltr;</code>
+          </h4>
+          <p>
+            <code>
+              margin-top: 2rem; margin-right: 4rem; margin-bottom: 2rem;
+              margin-left: 1rem;
+            </code>
+          </p>
+          <div
+            class="container"
+            style="writing-mode: horizontal-tb; direction: ltr"
+          >
+            <div
+              class="box"
+              style="
+                margin-top: 2rem;
+                margin-right: 4rem;
+                margin-bottom: 2rem;
                 margin-left: 1rem;
-              </code>
-            </p>
-            <div
-              class="container"
-              style="writing-mode: horizontal-tb; direction: ltr"
+              "
             >
-              <div
-                class="box"
-                style="
-                  margin-top: 2rem;
-                  margin-right: 4rem;
-                  margin-bottom: 2rem;
-                  margin-left: 1rem;
-                "
-              >
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
           </div>
-          <div>
-            <h4>
-              <code>writing-mode: horizontal-tb; direction: rtl;</code>
-            </h4>
-            <p>
-              <code>
-                margin-top: 2rem; margin-right: 4rem; margin-bottom: 2rem;
+        </div>
+        <div>
+          <h4>
+            <code>writing-mode: horizontal-tb; direction: rtl;</code>
+          </h4>
+          <p>
+            <code>
+              margin-top: 2rem; margin-right: 4rem; margin-bottom: 2rem;
+              margin-left: 1rem;
+            </code>
+          </p>
+          <div
+            class="container"
+            style="writing-mode: horizontal-tb; direction: rtl"
+          >
+            <div
+              class="box"
+              style="
+                margin-top: 2rem;
+                margin-right: 4rem;
+                margin-bottom: 2rem;
                 margin-left: 1rem;
-              </code>
-            </p>
-            <div
-              class="container"
-              style="writing-mode: horizontal-tb; direction: rtl"
+              "
             >
-              <div
-                class="box"
-                style="
-                  margin-top: 2rem;
-                  margin-right: 4rem;
-                  margin-bottom: 2rem;
-                  margin-left: 1rem;
-                "
-              >
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </div>
-            </div>
-          </div>
-          <div style="display: flex">
-            <div style="flex: 1">
-              <h4>
-                <code>writing-mode: vertical-lr; direction: ltr;</code>
-              </h4>
-              <p>
-                <code>margin-top: 1rem; margin-left: 2rem;</code>
-              </p>
-              <div
-                class="container"
-                style="writing-mode: vertical-lr; direction: ltr"
-              >
-                <div class="box" style="margin-top: 1rem; margin-left: 2rem">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div style="flex: 1">
-              <h4>
-                <code>writing-mode: vertical-rl; direction: ltr;</code>
-              </h4>
-              <p>
-                <code>margin-top: 1rem; margin-left: 2rem;</code>
-              </p>
-              <div
-                class="container"
-                style="writing-mode: vertical-rl; direction: ltr"
-              >
-                <div class="box" style="margin-top: 1rem; margin-left: 2rem">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div style="display: flex">
-            <div style="flex: 1">
-              <h4>
-                <code>writing-mode: vertical-lr; direction: rtl;</code>
-              </h4>
-              <p>
-                <code>margin-top: 1rem; margin-left: 2rem;</code>
-              </p>
-              <div
-                class="container"
-                style="writing-mode: vertical-lr; direction: rtl"
-              >
-                <div class="box" style="margin-top: 1rem; margin-left: 2rem">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div style="flex: 1">
-              <h4>
-                <code>writing-mode: vertical-rl; direction: rtl;</code>
-              </h4>
-              <p>
-                <code>margin-top: 1rem; margin-left: 2rem;</code>
-              </p>
-              <div
-                class="container"
-                style="writing-mode: vertical-rl; direction: rtl"
-              >
-                <div class="box" style="margin-top: 1rem; margin-left: 2rem">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  </p>
-                </div>
-              </div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
           </div>
         </div>
-        <hr />
-        <div>
-          <h2>Flow-relative directions</h2>
-          <div>
-            <h4>
-              <code>writing-mode: horizontal-tb; direction: ltr;</code>
-            </h4>
-            <p>
-              <code>margin-block: 2rem; margin-inline: 4rem;</code>
-            </p>
-            <div
-              class="container"
-              style="writing-mode: horizontal-tb; direction: ltr"
-            >
-              <div class="box" style="margin-block: 2rem; margin-inline: 4rem">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </div>
-            </div>
-          </div>
-          <div>
-            <h4>
-              <code>writing-mode: horizontal-tb; direction: rtl;</code>
-            </h4>
-            <p>
-              <code>margin-block: 1rem; margin-inline-start: 10rem;</code>
-            </p>
-            <div
-              class="container"
-              style="writing-mode: horizontal-tb; direction: rtl"
-            >
-              <div
-                class="box"
-                style="margin-block: 1rem; margin-inline-start: 10rem"
-              >
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </div>
-            </div>
-          </div>
-          <div style="display: flex">
-            <div style="flex: 1">
-              <h4>
-                <code>writing-mode: vertical-lr; direction: ltr;</code>
-              </h4>
-              <p>
-                <code>margin-block-end: 2rem; margin-inline-start: 1rem;</code>
-              </p>
-              <div
-                class="container"
-                style="writing-mode: vertical-lr; direction: ltr"
-              >
-                <div
-                  class="box"
-                  style="margin-block-end: 2rem; margin-inline-start: 1rem"
-                >
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div style="flex: 1">
-              <h4>
-                <code>writing-mode: vertical-rl; direction: ltr;</code>
-              </h4>
-              <p>
-                <code>margin-block-end: 2rem; margin-inline-start: 1rem;</code>
-              </p>
-              <div
-                class="container"
-                style="writing-mode: vertical-rl; direction: ltr"
-              >
-                <div
-                  class="box"
-                  style="margin-block-end: 2rem; margin-inline-start: 1rem"
-                >
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div style="display: flex">
-            <div style="flex: 1">
-              <h4>
-                <code>writing-mode: vertical-lr; direction: rtl;</code>
-              </h4>
-              <p>
-                <code>margin-block-end: 2rem; margin-inline-start: 1rem;</code>
-              </p>
-              <div
-                class="container"
-                style="writing-mode: vertical-lr; direction: rtl"
-              >
-                <div
-                  class="box"
-                  style="margin-block-end: 2rem; margin-inline-start: 1rem"
-                >
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div style="flex: 1">
-              <h4>
-                <code>writing-mode: vertical-rl; direction: rtl;</code>
-              </h4>
-              <p>
-                <code>margin-block-end: 2rem; margin-inline-start: 1rem;</code>
-              </p>
-              <div
-                class="container"
-                style="writing-mode: vertical-rl; direction: rtl"
-              >
-                <div
-                  class="box"
-                  style="margin-block-end: 2rem; margin-inline-start: 1rem"
-                >
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <hr />
-        <div>
-          <h3>Margin collapse</h3>
-          <div>
-            <div class="container" style="padding: unset">
-              <div class="box" style="margin: 5rem">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </div>
-              <div class="box" style="margin: 5rem">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </div>
-              <div class="box" style="margin: 5rem">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <hr />
-        <div>
-          <h3>Percentage</h3>
-          <div class="container" style="padding: unset; width: 200px">
-            <p>This box has a width of 200px.</p>
-            <div class="box" style="margin: 10%">
-              <p>
-                And this box has a margin of 10% (or 20px, as 10% of 200px).
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </details>
-    <hr />
-    <details>
-      <summary>Padding</summary>
-      <div>
-        <h3>Padding collapse</h3>
-        <div class="container">
-          <div class="box" style="padding: 5rem">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </div>
-          <div class="box" style="padding: 5rem">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </div>
-          <div class="box" style="padding: 5rem">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </div>
-        </div>
-      </div>
-    </details>
-    <hr />
-    <details>
-      <summary>Border</summary>
-      <div>
-        <h3>Border color</h3>
         <div style="display: flex">
           <div style="flex: 1">
+            <h4>
+              <code>writing-mode: vertical-lr; direction: ltr;</code>
+            </h4>
             <p>
-              <code>border: 1rem solid;</code>
+              <code>margin-top: 1rem; margin-left: 2rem;</code>
             </p>
-            <div class="box" style="border: 1rem solid">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div
+              class="container"
+              style="writing-mode: vertical-lr; direction: ltr"
+            >
+              <div class="box" style="margin-top: 1rem; margin-left: 2rem">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
             </div>
           </div>
           <div style="flex: 1">
+            <h4>
+              <code>writing-mode: vertical-rl; direction: ltr;</code>
+            </h4>
             <p>
-              <code>border: 1rem solid; color: red;</code>
+              <code>margin-top: 1rem; margin-left: 2rem;</code>
             </p>
-            <div class="box" style="border: 1rem solid; color: red">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div
+              class="container"
+              style="writing-mode: vertical-rl; direction: ltr"
+            >
+              <div class="box" style="margin-top: 1rem; margin-left: 2rem">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="display: flex">
+          <div style="flex: 1">
+            <h4>
+              <code>writing-mode: vertical-lr; direction: rtl;</code>
+            </h4>
+            <p>
+              <code>margin-top: 1rem; margin-left: 2rem;</code>
+            </p>
+            <div
+              class="container"
+              style="writing-mode: vertical-lr; direction: rtl"
+            >
+              <div class="box" style="margin-top: 1rem; margin-left: 2rem">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
             </div>
           </div>
           <div style="flex: 1">
+            <h4>
+              <code>writing-mode: vertical-rl; direction: rtl;</code>
+            </h4>
             <p>
-              <code>border: 1rem solid green; color: red;</code>
+              <code>margin-top: 1rem; margin-left: 2rem;</code>
             </p>
-            <div class="box" style="border: 1rem solid green; color: red">
+            <div
+              class="container"
+              style="writing-mode: vertical-rl; direction: rtl"
+            >
+              <div class="box" style="margin-top: 1rem; margin-left: 2rem">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div>
+        <h2>Flow-relative directions</h2>
+        <div>
+          <h4>
+            <code>writing-mode: horizontal-tb; direction: ltr;</code>
+          </h4>
+          <p>
+            <code>margin-block: 2rem; margin-inline: 4rem;</code>
+          </p>
+          <div
+            class="container"
+            style="writing-mode: horizontal-tb; direction: ltr"
+          >
+            <div class="box" style="margin-block: 2rem; margin-inline: 4rem">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h4>
+            <code>writing-mode: horizontal-tb; direction: rtl;</code>
+          </h4>
+          <p>
+            <code>margin-block: 1rem; margin-inline-start: 10rem;</code>
+          </p>
+          <div
+            class="container"
+            style="writing-mode: horizontal-tb; direction: rtl"
+          >
+            <div
+              class="box"
+              style="margin-block: 1rem; margin-inline-start: 10rem"
+            >
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+        </div>
+        <div style="display: flex">
+          <div style="flex: 1">
+            <h4>
+              <code>writing-mode: vertical-lr; direction: ltr;</code>
+            </h4>
+            <p>
+              <code>margin-block-end: 2rem; margin-inline-start: 1rem;</code>
+            </p>
+            <div
+              class="container"
+              style="writing-mode: vertical-lr; direction: ltr"
+            >
+              <div
+                class="box"
+                style="margin-block-end: 2rem; margin-inline-start: 1rem"
+              >
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </div>
+          </div>
+          <div style="flex: 1">
+            <h4>
+              <code>writing-mode: vertical-rl; direction: ltr;</code>
+            </h4>
+            <p>
+              <code>margin-block-end: 2rem; margin-inline-start: 1rem;</code>
+            </p>
+            <div
+              class="container"
+              style="writing-mode: vertical-rl; direction: ltr"
+            >
+              <div
+                class="box"
+                style="margin-block-end: 2rem; margin-inline-start: 1rem"
+              >
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="display: flex">
+          <div style="flex: 1">
+            <h4>
+              <code>writing-mode: vertical-lr; direction: rtl;</code>
+            </h4>
+            <p>
+              <code>margin-block-end: 2rem; margin-inline-start: 1rem;</code>
+            </p>
+            <div
+              class="container"
+              style="writing-mode: vertical-lr; direction: rtl"
+            >
+              <div
+                class="box"
+                style="margin-block-end: 2rem; margin-inline-start: 1rem"
+              >
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </div>
+          </div>
+          <div style="flex: 1">
+            <h4>
+              <code>writing-mode: vertical-rl; direction: rtl;</code>
+            </h4>
+            <p>
+              <code>margin-block-end: 2rem; margin-inline-start: 1rem;</code>
+            </p>
+            <div
+              class="container"
+              style="writing-mode: vertical-rl; direction: rtl"
+            >
+              <div
+                class="box"
+                style="margin-block-end: 2rem; margin-inline-start: 1rem"
+              >
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div>
+        <h3>Margin collapse</h3>
+        <div>
+          <div class="container" style="padding: unset">
+            <div class="box" style="margin: 5rem">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="box" style="margin: 5rem">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="box" style="margin: 5rem">
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
           </div>
         </div>
       </div>
-    </details>
+      <hr />
+      <div>
+        <h3>Percentage</h3>
+        <div class="container" style="padding: unset; width: 200px">
+          <p>This box has a width of 200px.</p>
+          <div class="box" style="margin: 10%">
+            <p>And this box has a margin of 10% (or 20px, as 10% of 200px).</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+
+    <h2>Padding studies</h2>
+    <div>
+      <h3>Padding collapse</h3>
+      <div class="container">
+        <div class="box" style="padding: 5rem">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="box" style="padding: 5rem">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="box" style="padding: 5rem">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <h2>Border studies</h2>
+    <div>
+      <h3>Border color</h3>
+      <div style="display: flex">
+        <div style="flex: 1">
+          <p>
+            <code>border: 1rem solid;</code>
+          </p>
+          <div class="box" style="border: 1rem solid">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+        <div style="flex: 1">
+          <p>
+            <code>border: 1rem solid; color: red;</code>
+          </p>
+          <div class="box" style="border: 1rem solid; color: red">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+        <div style="flex: 1">
+          <p>
+            <code>border: 1rem solid green; color: red;</code>
+          </p>
+          <div class="box" style="border: 1rem solid green; color: red">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+      </div>
+      <h3>Border radius</h3>
+      <p>Percentage</p>
+      <div class="container">
+        <p>
+          This box has a <code>width</code> of <code>200px</code>, a
+          <code>height</code> of <code>100px</code> and a
+          <code>border-radius</code> of 10%, which results in a horizontal
+          radius of absolute <code>20px</code> and a vertical radius of absolute
+          <code>10px</code>.
+        </p>
+        <div
+          class="box"
+          style="
+            border: 10px solid black;
+            border-radius: 10%;
+            height: 100px;
+            width: 200px;
+          "
+        >
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
