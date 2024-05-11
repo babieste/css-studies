@@ -10,6 +10,7 @@ body {
 }
 
 .container {
-  background-color: lightgray;
-  padding: 1rem;
+  background-color: lightsalmon;
+  display: inline-block;
+  padding: 1px;
 }

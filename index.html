@@ -9,348 +9,584 @@
   <body>
     <h1>CSS Studies</h1>
     <hr />
-    <h2>Margin studies</h2>
+    <h2>Abstract Box Terminology</h2>
     <div>
-      <div>
-        <h3>Physical directions</h3>
-        <div>
-          <h4>
-            <code>writing-mode: horizontal-tb; direction: ltr;</code>
-          </h4>
-          <p>
-            <code>
-              margin-top: 2rem; margin-right: 4rem; margin-bottom: 2rem;
-              margin-left: 1rem;
-            </code>
-          </p>
-          <div
-            class="container"
-            style="writing-mode: horizontal-tb; direction: ltr"
-          >
-            <div
-              class="box"
-              style="
-                margin-top: 2rem;
-                margin-right: 4rem;
-                margin-bottom: 2rem;
-                margin-left: 1rem;
-              "
-            >
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-          </div>
-        </div>
-        <div>
-          <h4>
-            <code>writing-mode: horizontal-tb; direction: rtl;</code>
-          </h4>
-          <p>
-            <code>
-              margin-top: 2rem; margin-right: 4rem; margin-bottom: 2rem;
-              margin-left: 1rem;
-            </code>
-          </p>
-          <div
-            class="container"
-            style="writing-mode: horizontal-tb; direction: rtl"
-          >
-            <div
-              class="box"
-              style="
-                margin-top: 2rem;
-                margin-right: 4rem;
-                margin-bottom: 2rem;
-                margin-left: 1rem;
-              "
-            >
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-          </div>
-        </div>
-        <div style="display: flex">
-          <div style="flex: 1">
-            <h4>
-              <code>writing-mode: vertical-lr; direction: ltr;</code>
-            </h4>
-            <p>
-              <code>margin-top: 1rem; margin-left: 2rem;</code>
-            </p>
-            <div
-              class="container"
-              style="writing-mode: vertical-lr; direction: ltr"
-            >
-              <div class="box" style="margin-top: 1rem; margin-left: 2rem">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </div>
-            </div>
-          </div>
-          <div style="flex: 1">
-            <h4>
-              <code>writing-mode: vertical-rl; direction: ltr;</code>
-            </h4>
-            <p>
-              <code>margin-top: 1rem; margin-left: 2rem;</code>
-            </p>
-            <div
-              class="container"
-              style="writing-mode: vertical-rl; direction: ltr"
-            >
-              <div class="box" style="margin-top: 1rem; margin-left: 2rem">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div style="display: flex">
-          <div style="flex: 1">
-            <h4>
-              <code>writing-mode: vertical-lr; direction: rtl;</code>
-            </h4>
-            <p>
-              <code>margin-top: 1rem; margin-left: 2rem;</code>
-            </p>
-            <div
-              class="container"
-              style="writing-mode: vertical-lr; direction: rtl"
-            >
-              <div class="box" style="margin-top: 1rem; margin-left: 2rem">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </div>
-            </div>
-          </div>
-          <div style="flex: 1">
-            <h4>
-              <code>writing-mode: vertical-rl; direction: rtl;</code>
-            </h4>
-            <p>
-              <code>margin-top: 1rem; margin-left: 2rem;</code>
-            </p>
-            <div
-              class="container"
-              style="writing-mode: vertical-rl; direction: rtl"
-            >
-              <div class="box" style="margin-top: 1rem; margin-left: 2rem">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </div>
-            </div>
-          </div>
-        </div>
+      <p>Exemplo 1) Parágrafos em um modo de escrita horizontal top-bottom:</p>
+      <pre>
+&lt;div style=&quot;border: 1px solid black; writing-mode: horizontal-tb&quot;&gt;
+  &lt;p&gt;Nunc non euismod nibh, vitae efficitur elit.&lt;/p&gt;
+  &lt;p&gt;Nulla purus metus, vestibulum a nunc a.&lt;/p&gt;
+&lt;/div&gt;
+      </pre>
+      <div style="border: 1px solid black; writing-mode: horizontal-tb">
+        <p>Nunc non euismod nibh, vitae efficitur elit.</p>
+        <p>Nulla purus metus, vestibulum a nunc a.</p>
       </div>
-      <hr />
-      <div>
-        <h2>Flow-relative directions</h2>
-        <div>
-          <h4>
-            <code>writing-mode: horizontal-tb; direction: ltr;</code>
-          </h4>
-          <p>
-            <code>margin-block: 2rem; margin-inline: 4rem;</code>
-          </p>
-          <div
-            class="container"
-            style="writing-mode: horizontal-tb; direction: ltr"
-          >
-            <div class="box" style="margin-block: 2rem; margin-inline: 4rem">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-          </div>
-        </div>
-        <div>
-          <h4>
-            <code>writing-mode: horizontal-tb; direction: rtl;</code>
-          </h4>
-          <p>
-            <code>margin-block: 1rem; margin-inline-start: 10rem;</code>
-          </p>
-          <div
-            class="container"
-            style="writing-mode: horizontal-tb; direction: rtl"
-          >
-            <div
-              class="box"
-              style="margin-block: 1rem; margin-inline-start: 10rem"
-            >
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-          </div>
-        </div>
-        <div style="display: flex">
-          <div style="flex: 1">
-            <h4>
-              <code>writing-mode: vertical-lr; direction: ltr;</code>
-            </h4>
-            <p>
-              <code>margin-block-end: 2rem; margin-inline-start: 1rem;</code>
-            </p>
-            <div
-              class="container"
-              style="writing-mode: vertical-lr; direction: ltr"
-            >
-              <div
-                class="box"
-                style="margin-block-end: 2rem; margin-inline-start: 1rem"
-              >
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </div>
-            </div>
-          </div>
-          <div style="flex: 1">
-            <h4>
-              <code>writing-mode: vertical-rl; direction: ltr;</code>
-            </h4>
-            <p>
-              <code>margin-block-end: 2rem; margin-inline-start: 1rem;</code>
-            </p>
-            <div
-              class="container"
-              style="writing-mode: vertical-rl; direction: ltr"
-            >
-              <div
-                class="box"
-                style="margin-block-end: 2rem; margin-inline-start: 1rem"
-              >
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div style="display: flex">
-          <div style="flex: 1">
-            <h4>
-              <code>writing-mode: vertical-lr; direction: rtl;</code>
-            </h4>
-            <p>
-              <code>margin-block-end: 2rem; margin-inline-start: 1rem;</code>
-            </p>
-            <div
-              class="container"
-              style="writing-mode: vertical-lr; direction: rtl"
-            >
-              <div
-                class="box"
-                style="margin-block-end: 2rem; margin-inline-start: 1rem"
-              >
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </div>
-            </div>
-          </div>
-          <div style="flex: 1">
-            <h4>
-              <code>writing-mode: vertical-rl; direction: rtl;</code>
-            </h4>
-            <p>
-              <code>margin-block-end: 2rem; margin-inline-start: 1rem;</code>
-            </p>
-            <div
-              class="container"
-              style="writing-mode: vertical-rl; direction: rtl"
-            >
-              <div
-                class="box"
-                style="margin-block-end: 2rem; margin-inline-start: 1rem"
-              >
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <hr />
-      <div>
-        <h3>Margin collapse</h3>
-        <div>
-          <div class="container" style="padding: unset">
-            <div class="box" style="margin: 5rem">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-            <div class="box" style="margin: 5rem">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-            <div class="box" style="margin: 5rem">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <hr />
-      <div>
-        <h3>Percentage</h3>
-        <div class="container" style="padding: unset; width: 200px">
-          <p>This box has a width of 200px.</p>
-          <div class="box" style="margin: 10%">
-            <p>And this box has a margin of 10% (or 20px, as 10% of 200px).</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <hr />
-
-    <h2>Padding studies</h2>
-    <div>
-      <h3>Padding collapse</h3>
-      <div class="container">
-        <div class="box" style="padding: 5rem">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-        <div class="box" style="padding: 5rem">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-        <div class="box" style="padding: 5rem">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-      </div>
-    </div>
-    <hr />
-    <h2>Border studies</h2>
-    <div>
-      <h3>Border color</h3>
+      <p>
+        Exemplo 2) Parágrafos em um modo de escrita vertical left-right e
+        vertical right-left:
+      </p>
+      <pre>
+&lt;div style=&quot;border: 1px solid black; writing-mode: vertical-lr&quot;&gt;
+  &lt;p&gt;Nunc non euismod nibh, vitae efficitur elit.&lt;/p&gt;
+  &lt;p&gt;Nulla purus metus, vestibulum a nunc a.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div style=&quot;border: 1px solid black; writing-mode: vertical-rl&quot;&gt;
+  &lt;p&gt;Nunc non euismod nibh, vitae efficitur elit.&lt;/p&gt;
+  &lt;p&gt;Nulla purus metus, vestibulum a nunc a.&lt;/p&gt;
+&lt;/div&gt;
+      </pre>
       <div style="display: flex">
-        <div style="flex: 1">
-          <p>
-            <code>border: 1rem solid;</code>
-          </p>
-          <div class="box" style="border: 1rem solid">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div style="border: 1px solid black; writing-mode: vertical-lr">
+          <p>Nunc non euismod nibh, vitae efficitur elit.</p>
+          <p>Nulla purus metus, vestibulum a nunc a.</p>
+        </div>
+        <div style="border: 1px solid black; writing-mode: vertical-rl">
+          <p>Nunc non euismod nibh, vitae efficitur elit.</p>
+          <p>Nulla purus metus, vestibulum a nunc a.</p>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <h2>Margens</h2>
+    <div>
+      <h3>Propriedades físicas</h3>
+      <p>
+        Exemplo 1) Uso das propriedades físicas e sua relação com o modo de
+        escrita:
+      </p>
+      <div style="display: flex; flex-wrap: wrap; gap: 1rem">
+        <div>
+          <pre>
+&lt;div class=&quot;container&quot; style=&quot;writing-mode: horizontal-tb&quot;&gt;
+  &lt;p
+    class=&quot;box&quot;
+    style=&quot;
+      margin-top: 2rem;
+      margin-right: 4rem;
+      margin-bottom: 2rem;
+      margin-left: 1rem;
+    &quot;
+  &gt;
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  &lt;/p&gt;
+&lt;/div&gt;
+          </pre>
+          <div class="container" style="writing-mode: horizontal-tb">
+            <p
+              class="box"
+              style="
+                margin-top: 2rem;
+                margin-right: 4rem;
+                margin-bottom: 2rem;
+                margin-left: 1rem;
+              "
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
           </div>
         </div>
-        <div style="flex: 1">
-          <p>
-            <code>border: 1rem solid; color: red;</code>
-          </p>
-          <div class="box" style="border: 1rem solid; color: red">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div>
+          <pre>
+&lt;div class=&quot;container&quot; style=&quot;writing-mode: vertical-lr&quot;&gt;
+  &lt;p
+    class=&quot;box&quot;
+    style=&quot;
+      margin-top: 2rem;
+      margin-right: 4rem;
+      margin-bottom: 2rem;
+      margin-left: 1rem;
+    &quot;
+  &gt;
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  &lt;/p&gt;
+&lt;/div&gt;
+          </pre>
+          <div class="container" style="writing-mode: vertical-lr">
+            <p
+              class="box"
+              style="
+                margin-top: 2rem;
+                margin-right: 4rem;
+                margin-bottom: 2rem;
+                margin-left: 1rem;
+              "
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
           </div>
         </div>
-        <div style="flex: 1">
-          <p>
-            <code>border: 1rem solid green; color: red;</code>
-          </p>
-          <div class="box" style="border: 1rem solid green; color: red">
+        <div>
+          <pre>
+&lt;div class=&quot;container&quot; style=&quot;writing-mode: vertical-rl&quot;&gt;
+  &lt;p
+    class=&quot;box&quot;
+    style=&quot;
+      margin-top: 2rem;
+      margin-right: 4rem;
+      margin-bottom: 2rem;
+      margin-left: 1rem;
+    &quot;
+  &gt;
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  &lt;/p&gt;
+&lt;/div&gt;
+          </pre>
+          <div class="container" style="writing-mode: vertical-rl">
+            <p
+              class="box"
+              style="
+                margin-top: 2rem;
+                margin-right: 4rem;
+                margin-bottom: 2rem;
+                margin-left: 1rem;
+              "
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+        </div>
+      </div>
+      <h3>Propriedades lógicas</h3>
+      <p>
+        Exemplo 1) Uso das propriedades lógicas e sua relação com o modo e
+        direção de escrita:
+      </p>
+      <div style="display: grid; gap: 1rem; grid-template-columns: 1fr 1fr">
+        <div>
+          <pre>
+&lt;div
+  class=&quot;container&quot;
+  style=&quot;writing-mode: horizontal-tb; direction: ltr&quot;
+&gt;
+  &lt;p
+    class=&quot;box&quot;
+    style=&quot;
+      margin-block-start: 20px;
+      margin-block-end: 50px;
+      margin-inline-start: 35px;
+      margin-inline-end: 80px;
+    &quot;
+  &gt;
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  &lt;/p&gt;
+&lt;/div&gt;
+          </pre>
+          <div
+            class="container"
+            style="writing-mode: horizontal-tb; direction: ltr"
+          >
+            <p
+              class="box"
+              style="
+                margin-block-start: 20px;
+                margin-block-end: 50px;
+                margin-inline-start: 35px;
+                margin-inline-end: 80px;
+              "
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+        </div>
+        <div>
+          <pre>
+&lt;div
+  class=&quot;container&quot;
+  style=&quot;writing-mode: horizontal-tb; direction: rtl&quot;
+&gt;
+  &lt;p
+    class=&quot;box&quot;
+    style=&quot;
+      margin-block-start: 20px;
+      margin-block-end: 50px;
+      margin-inline-start: 35px;
+      margin-inline-end: 80px;
+    &quot;
+  &gt;
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  &lt;/p&gt;
+&lt;/div&gt;
+          </pre>
+          <div
+            class="container"
+            style="writing-mode: horizontal-tb; direction: rtl"
+          >
+            <p
+              class="box"
+              style="
+                margin-block-start: 20px;
+                margin-block-end: 50px;
+                margin-inline-start: 35px;
+                margin-inline-end: 80px;
+              "
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+        </div>
+        <div>
+          <pre>
+&lt;div
+  class=&quot;container&quot;
+  style=&quot;writing-mode: vertical-lr; direction: ltr&quot;
+&gt;
+  &lt;p
+    class=&quot;box&quot;
+    style=&quot;
+      margin-block-start: 20px;
+      margin-block-end: 50px;
+      margin-inline-start: 35px;
+      margin-inline-end: 80px;
+    &quot;
+  &gt;
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  &lt;/p&gt;
+&lt;/div&gt;
+          </pre>
+          <div
+            class="container"
+            style="writing-mode: vertical-lr; direction: ltr"
+          >
+            <p
+              class="box"
+              style="
+                margin-block-start: 20px;
+                margin-block-end: 50px;
+                margin-inline-start: 35px;
+                margin-inline-end: 80px;
+              "
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+        </div>
+        <div>
+          <pre>
+&lt;div
+  class=&quot;container&quot;
+  style=&quot;writing-mode: vertical-lr; direction: rtl&quot;
+&gt;
+  &lt;p
+    class=&quot;box&quot;
+    style=&quot;
+      margin-block-start: 20px;
+      margin-block-end: 50px;
+      margin-inline-start: 35px;
+      margin-inline-end: 80px;
+    &quot;
+  &gt;
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  &lt;/p&gt;
+&lt;/div&gt;
+          </pre>
+          <div
+            class="container"
+            style="writing-mode: vertical-lr; direction: rtl"
+          >
+            <p
+              class="box"
+              style="
+                margin-block-start: 20px;
+                margin-block-end: 50px;
+                margin-inline-start: 35px;
+                margin-inline-end: 80px;
+              "
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+        </div>
+        <div>
+          <pre>
+&lt;div
+  class=&quot;container&quot;
+  style=&quot;writing-mode: vertical-rl; direction: ltr&quot;
+&gt;
+  &lt;p
+    class=&quot;box&quot;
+    style=&quot;
+      margin-block-start: 20px;
+      margin-block-end: 50px;
+      margin-inline-start: 35px;
+      margin-inline-end: 80px;
+    &quot;
+  &gt;
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  &lt;/p&gt;
+&lt;/div&gt;
+          </pre>
+          <div
+            class="container"
+            style="writing-mode: vertical-rl; direction: ltr"
+          >
+            <p
+              class="box"
+              style="
+                margin-block-start: 20px;
+                margin-block-end: 50px;
+                margin-inline-start: 35px;
+                margin-inline-end: 80px;
+              "
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+        </div>
+        <div>
+          <pre>
+&lt;div
+  class=&quot;container&quot;
+  style=&quot;writing-mode: vertical-rl; direction: rtl&quot;
+&gt;
+  &lt;p
+    class=&quot;box&quot;
+    style=&quot;
+      margin-block-start: 20px;
+      margin-block-end: 50px;
+      margin-inline-start: 35px;
+      margin-inline-end: 80px;
+    &quot;
+  &gt;
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  &lt;/p&gt;
+&lt;/div&gt;
+          </pre>
+          <div
+            class="container"
+            style="writing-mode: vertical-rl; direction: rtl"
+          >
+            <p
+              class="box"
+              style="
+                margin-block-start: 20px;
+                margin-block-end: 50px;
+                margin-inline-start: 35px;
+                margin-inline-end: 80px;
+              "
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+        </div>
+      </div>
+      <h3>Colapso de margem</h3>
+      <p>
+        Exemplo 1) Irmãos adjacentes: se existem dois elementos exibidos um após
+        o outro, a margem inferior do primeiro elemento será colapsada com a
+        margem superior do elemento seguinte
+      </p>
+      <div>
+        <pre>
+&lt;div class=&quot;container&quot;&gt;
+  &lt;div class=&quot;box&quot; style=&quot;margin: 50px&quot;&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;box&quot; style=&quot;margin: 50px&quot;&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+        </pre>
+        <div class="container">
+          <div class="box" style="margin: 50px">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <div class="box" style="margin: 50px">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
         </div>
       </div>
-      <h3>Border radius</h3>
-      <p>Percentage</p>
-      <div class="container">
-        <p>
-          This box has a <code>width</code> of <code>200px</code>, a
-          <code>height</code> of <code>100px</code> and a
-          <code>border-radius</code> of 10%, which results in a horizontal
-          radius of absolute <code>20px</code> and a vertical radius of absolute
-          <code>10px</code>.
-        </p>
-        <div
+      <p>
+        Exemplo 2) Boxes vazios: se um box estiver vazio, suas margens superior
+        e inferior poderão colapsar. Todavia, adicionar qualquer informação ao
+        box, como por exemplo padding, irá “descolapsar” as margens.
+      </p>
+      <div style="display: flex; gap: 1rem">
+        <div>
+          <pre>
+&lt;div class=&quot;container&quot;&gt;
+  &lt;p style=&quot;margin: 50px&quot;&gt;&lt;/p&gt;
+&lt;/div&gt;
+          </pre>
+          <div class="container">
+            <p style="margin: 50px"></p>
+          </div>
+        </div>
+        <div>
+          <pre>
+&lt;div class=&quot;container&quot;&gt;
+  &lt;p style=&quot;margin: 50px; padding: 10px&quot;&gt;&lt;/p&gt;
+&lt;/div&gt;
+          </pre>
+          <div class="container">
+            <p style="margin: 50px; padding: 10px"></p>
+          </div>
+        </div>
+      </div>
+      <p>
+        Exemplo 3) Pai e primeiro ou último elemento filho: a margem superior do
+        primeiro elemento filho e a margem inferior do último elemento filho de
+        um elemento pai que possui block formatting context irão colapsar, de
+        forma que a padding edge superior do elemento pai e do primeiro filho se
+        encontrarão, e o padding edge inferior do elemento pai e do último filho
+        se encontrarão.
+      </p>
+      <div>
+        <pre>
+&lt;div class=&quot;container&quot;&gt;
+  &lt;div class=&quot;box&quot; style=&quot;margin: 5rem&quot;&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;box&quot; style=&quot;margin: 5rem&quot;&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;          
+        </pre>
+        <div class="container" style="padding: unset">
+          <div class="box" style="margin: 5rem">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <div class="box" style="margin: 5rem">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+      </div>
+      <h3>Porcentagens</h3>
+      <p>
+        Exemplo 1) O tamanho de uma margem se definido em porcentagem é sempre
+        relativo ao inline size/logical width (ou ao width físico, se estiver em
+        um modo de escrita horizontal) do elemento pai.
+      </p>
+      <div style="display: flex; gap: 1rem">
+        <div>
+          <pre>
+&lt;div
+  class=&quot;container&quot;
+  style=&quot;width: 200px; writing-mode: horizontal-tb&quot;
+&gt;
+  &lt;p&gt;Este box tem um width de 200px.&lt;/p&gt;
+  &lt;div class=&quot;box&quot; style=&quot;margin: 10%&quot;&gt;
+    &lt;p&gt;
+      E este box tem uma margem de 10%, ou um valor absoluto de 20px,
+      que é 10% de 200px.
+    &lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+          </pre>
+          <div
+            class="container"
+            style="width: 200px; writing-mode: horizontal-tb"
+          >
+            <p>Este box tem um width de 200px.</p>
+            <div class="box" style="margin: 10%">
+              <p>
+                E este box tem uma margem de 10%, ou um valor absoluto de 20px,
+                que é 10% de 200px.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <pre>
+&lt;div
+  class=&quot;container&quot;
+  style=&quot;height: 500px; writing-mode: vertical-lr&quot;
+&gt;
+  &lt;p&gt;Este box tem um heigth de 500px.&lt;/p&gt;
+  &lt;div class=&quot;box&quot; style=&quot;margin: 10%&quot;&gt;
+    &lt;p&gt;
+      E este box tem uma margem de 10%, ou um valor absoluto de 50px,
+      que é 10% de 500px.
+    &lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+          </pre>
+          <div
+            class="container"
+            style="height: 500px; writing-mode: vertical-lr"
+          >
+            <p>Este box tem um heigth de 500px.</p>
+            <div class="box" style="margin: 10%">
+              <p>
+                E este box tem uma margem de 10%, ou um valor absoluto de 50px,
+                que é 10% de 500px.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <h2>Bordas</h2>
+    <div>
+      <h3>Cor</h3>
+      <div style="display: flex; gap: 1rem">
+        <div>
+          <pre>
+&lt;p class=&quot;box&quot; style=&quot;border: 1rem solid&quot;&gt;
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+&lt;/p&gt;
+          </pre>
+          <p class="box" style="border: 1rem solid">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+        <div>
+          <pre>
+&lt;p class=&quot;box&quot; style=&quot;border: 1rem solid; color: red&quot;&gt;
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+&lt;/p&gt;
+          </pre>
+          <p class="box" style="border: 1rem solid; color: red">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+        <div>
+          <pre>
+&lt;p class=&quot;box&quot; style=&quot;border: 1rem solid green; color: red&quot;&gt;
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+&lt;/p&gt;
+          </pre>
+          <p class="box" style="border: 1rem solid green; color: red">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+      </div>
+      <h3>Curvatura</h3>
+      <p>
+        Exemplo 1) A porcentagem para o raio horizontal refere-se à largura da
+        border box e a porcentagem para o raio vertical refere-se à altura do
+        border box:
+      </p>
+      <div>
+        <pre>
+&lt;p
+  class=&quot;box&quot;
+  style=&quot;
+    border: 10px solid black;
+    border-radius: 10%;
+    height: 300px;
+    width: 200px;
+  &quot;
+&gt;
+  Este box tem uma largura de 200px, uma altura de 300px e um
+  border-radius de 10%, o que resulta em um raio horizontal absoluto de
+  20px e um raio vertical absoluto de 30px.
+&lt;/p&gt;
+        </pre>
+        <p
           class="box"
           style="
             border: 10px solid black;
             border-radius: 10%;
-            height: 100px;
+            height: 300px;
             width: 200px;
           "
         >
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
+          Este box tem uma largura de 200px, uma altura de 300px e um
+          border-radius de 10%, o que resulta em um raio horizontal absoluto de
+          20px e um raio vertical absoluto de 30px.
+        </p>
       </div>
     </div>
   </body>
