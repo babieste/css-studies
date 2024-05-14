@@ -589,5 +589,49 @@
         </p>
       </div>
     </div>
+    <hr />
+    <h2>Introdução ao modelo de formatação visual</h2>
+    <div>
+      <h3>Containing blocks</h3>
+      <div>
+        <p>
+          Posições e tamanhos de boxes são, em sua maioria, calculados em
+          relação às bordas (edges) de um box denominado containing block.
+        </p>
+        <div style="display: flex; gap: 1rem">
+          <div>
+            <pre>
+&lt;p&gt;
+  Este parágrafo é o containing block do box
+  &lt;strong&gt;deste elemento em negrito&lt;/strong&gt;.
+&lt;/p&gt;
+            </pre>
+            <p>
+              Este parágrafo é o containing block do box
+              <strong>deste elemento em negrito</strong>.
+            </p>
+          </div>
+          <div>
+            <pre>
+&lt;div style=&quot;border: 1px solid black&quot;&gt;
+  &lt;p&gt;
+    Esta div é o containing block do box deste parágrafo e do box do
+    botão gerados dentro dele.
+  &lt;/p&gt;
+  &lt;button&gt;Botão&lt;/button&gt;
+&lt;/div&gt;
+            </pre>
+            <div style="border: 1px solid black; height: 50px; width: 300px">
+              <p>
+                Esta div é o containing block do box deste parágrafo e do box do
+                botão gerados dentro dele. Como a div possui dimensões fixas,
+                seu conteúdo transborda.
+              </p>
+              <button>Botão</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
