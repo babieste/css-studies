@@ -615,20 +615,73 @@
             <pre>
 &lt;div style=&quot;border: 1px solid black&quot;&gt;
   &lt;p&gt;
-    Esta div é o containing block do box deste parágrafo e do box do
-    botão gerados dentro dele.
+    Esta div é o containing block do box deste parágrafo gerado dentro dele.
   &lt;/p&gt;
   &lt;button&gt;Botão&lt;/button&gt;
 &lt;/div&gt;
             </pre>
             <div style="border: 1px solid black; height: 50px; width: 300px">
               <p>
-                Esta div é o containing block do box deste parágrafo e do box do
-                botão gerados dentro dele. Como a div possui dimensões fixas,
-                seu conteúdo transborda.
+                Esta div é o containing block do box deste parágrafo geradoo
+                dentro dele. Como a div possui dimensões fixas, seu conteúdo
+                transborda.
               </p>
-              <button>Botão</button>
             </div>
+          </div>
+        </div>
+      </div>
+      <h3>Formatting context</h3>
+      <div>
+        <pre>
+&lt;div style=&quot;display: flex; gap: 1rem&quot;&gt;
+  &lt;div style=&quot;border: 1px solid blue&quot;&gt;
+    &lt;p&gt;
+      Este parágrafo está num contexto de formatação block, não sendo
+      influenciado pelo flex formatting context do elemento pai.
+    &lt;/p&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div
+    style=&quot;
+      border: 1px solid blue;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+    &quot;
+  &gt;
+    &lt;p style=&quot;border: 1px solid red&quot;&gt;Já estes parágrafos&lt;/p&gt;
+    &lt;p style=&quot;border: 1px solid red&quot;&gt;estão em um&lt;/p&gt;
+    &lt;p style=&quot;border: 1px solid red&quot;&gt;contexto de formatação grid,&lt;/p&gt;
+    &lt;p style=&quot;border: 1px solid red&quot;&gt;
+      também não sendo influenciado pelo contexto de formatação do
+      box pai
+    &lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+        </pre>
+        <div style="display: flex; gap: 1rem">
+          <div style="border: 1px solid blue">
+            <p>
+              Este parágrafo está num contexto de formatação block, não sendo
+              influenciado pelo flex formatting context do elemento pai.
+            </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <div
+            style="
+              border: 1px solid blue;
+              display: grid;
+              grid-template-columns: 1fr 1fr;
+              grid-template-rows: 1fr 1fr;
+            "
+          >
+            <p style="border: 1px solid red">Já estes parágrafos</p>
+            <p style="border: 1px solid red">estão em um</p>
+            <p style="border: 1px solid red">contexto de formatação grid,</p>
+            <p style="border: 1px solid red">
+              também não sendo influenciado pelo contexto de formatação do box
+              pai
+            </p>
           </div>
         </div>
       </div>
